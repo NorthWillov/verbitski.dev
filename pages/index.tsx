@@ -1,15 +1,10 @@
 import Container from "../components/container"
-import Posts from "../components/posts"
 import Layout from "../components/layout"
-import { getAllPosts } from "../lib/api"
+import Navbar from "../components/navbar"
 import Head from "next/head"
-import Post from "../types/post"
+import { FC } from "react"
 
-type Props = {
-  allPosts: Post[]
-}
-
-const Index = ({ allPosts }: Props) => {
+const Index: FC = () => {
   return (
     <>
       <Layout>
@@ -17,7 +12,24 @@ const Index = ({ allPosts }: Props) => {
           <title>Verbitski | Software Developer</title>
         </Head>
         <Container>
-          {allPosts.length > 0 && <Posts posts={allPosts} />}
+          <Navbar />
+          <div className="flex mt-10 items-center justify-around">
+            <img
+              className="w-64 h-64 rounded-full"
+              srcSet="/assets/blog/authors/artem.jpeg"
+              alt="Artem"
+            />
+            <p className="w-1/2">
+              Hi there 👋 <br />I am a Front-End Developer with hands-on to
+              build user-friendly and professional looking sites. I have
+              knowledge to solve a problem across many mediums and especially
+              adept at taking an already existed project to the next level. With
+              every project I aim to make the user experience intuitive and easy
+              to follow for any level of user. I look forward to using my skills
+              as a developer and designer as part of a quality-driven team to
+              build easy-to-use and professional looking sites.
+            </p>
+          </div>
         </Container>
       </Layout>
     </>
@@ -25,18 +37,3 @@ const Index = ({ allPosts }: Props) => {
 }
 
 export default Index
-
-export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    "title",
-    "date",
-    "slug",
-    "author",
-    "coverImage",
-    "excerpt",
-  ])
-
-  return {
-    props: { allPosts },
-  }
-}

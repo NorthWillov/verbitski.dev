@@ -10,6 +10,7 @@ import PostTitle from "../../components/post-title"
 import Head from "next/head"
 import markdownToHtml from "../../lib/markdownToHtml"
 import PostType from "../../types/post"
+import Navbar from "../../components/navbar"
 
 type Props = {
   post: PostType
