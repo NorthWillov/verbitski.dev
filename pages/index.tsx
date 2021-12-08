@@ -22,7 +22,7 @@ const Index: FC = () => {
             />
             <div className="w-1/2">
               <p>
-                <b>Hi there</b> 👋 <br />I am a Software Developer with hands-on
+                <b>Hi there</b> 👋 <br />I am a software engineer with hands-on
                 to build user-friendly and professional looking sites. I have
                 knowledge to solve a problem across many mediums and especially
                 adept at taking an already existed project to the next level.

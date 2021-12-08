@@ -16,11 +16,10 @@ const Projects: FC = () => {
         <h1 className="text-3xl text-center my-10">Projects</h1>
 
         <div className="flex justify-around">
-          <div className="w-64 border border-black rounded p-1">
+          <div className="w-80 border border-black rounded p-1">
             <Link href="https://riccardopizzeria.herokuapp.com">
               <a target="_blank">
                 <img
-                  className="h-64"
                   src="https://i.ibb.co/YB36KZc/pizza-wege.png"
                   alt="project"
                 />
@@ -45,11 +44,11 @@ const Projects: FC = () => {
             </div>
           </div>
 
-          <div className="w-64 border border-black rounded p-1">
+          <div className="w-80 border border-black rounded p-1">
             <Link href="https://northwillov.github.io/colors-app">
               <a target="_blank">
                 <img
-                  className="h-64"
+                  className="h-72"
                   src="/assets/projects/colors_app.png"
                   alt="project"
                 />
@@ -73,11 +72,11 @@ const Projects: FC = () => {
             </div>
           </div>
 
-          <div className="w-64 border border-black rounded p-1">
+          <div className="w-80 border border-black rounded p-1">
             <Link href="https://northwillov.github.io/virtuslab">
               <a target="_blank">
                 <img
-                  className="h-64"
+                  className="h-72"
                   src="/assets/projects/starwars.png"
                   alt="project"
                 />
@@ -87,7 +86,7 @@ const Projects: FC = () => {
               Star Wars Characters Catalogue
             </h2>
             <p className="text-center">
-              Catalogue, containing all data about starwars foes.
+              Catalogue, containing all data about 'Star Wars' foes.
             </p>
             <div className="flex justify-around">
               <Link href="https://northwillov.github.io/virtuslab">
