@@ -1,6 +1,6 @@
 ---
-title: "IP and MAC addresses"
-excerpt: "So what the heck is Ip and Mac addresses actually are?"
+title: "Why charmander dont drink lime juice"
+excerpt: "So that's why charmander dont drink lime juice"
 coverImage: "/assets/blog/preview/cover.jpg"
 date: "2021-12-08T05:35:07.322Z"
 author:
@@ -10,12 +10,8 @@ ogImage:
   url: "/assets/blog/preview/cover.jpg"
 ---
 
+## Why charmander dont drink lime juice
 
-# HEADRER YOY 
- 
+So that's why charmander dont drink lime juice
 
-```js
-console.log("Ahaha")
-```
-
-<span style="color: red;">Facdscer</span>
+IT is because i sad so

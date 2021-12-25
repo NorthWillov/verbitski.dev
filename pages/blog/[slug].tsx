@@ -33,7 +33,12 @@ const Post = ({ post, morePosts, preview }: Props) => {
             <article className="mb-32">
               <Head>
                 <title>{post.title}</title>
-                <meta property="og:image" content={post.ogImage.url} />
+                <meta name="description" content={`${post.title}`}></meta>
+                <meta
+                  name="keywords"
+                  content={`verbitski.dev, verbitski, verbytskyi, ${post.author}, ${post.title}, ${post.content}`}
+                />
+                <meta name="author" content={`${post.author}`} />
               </Head>
               <PostHeader
                 title={post.title}
