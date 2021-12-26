@@ -14,13 +14,13 @@ const Index: FC = () => {
         </Head>
         <Container>
           <Navbar />
-          <div className="flex mt-10 items-center justify-around">
+          <div className="grid grid-cols-1 sm:grid-cols-2 mt-5">
             <img
-              className="w-64 h-64 rounded-full"
+              className="w-64 h-64 rounded-full justify-self-center"
               srcSet="/assets/blog/authors/artem.jpeg"
               alt="Artem"
             />
-            <div className="w-1/2">
+            <div className="text-center sm:text-left mt-5">
               <p>
                 <b>Hi there</b> 👋 <br />I am a software engineer with hands-on
                 to build user-friendly and professional looking sites. I have
@@ -32,7 +32,7 @@ const Index: FC = () => {
                 quality-driven team to build easy-to-use and professional
                 looking sites.
               </p>
-              <div className="mt-3">
+              <div className="mt-5">
                 <Link href="https://github.com/NorthWillov">
                   <a target="_blank">
                     <i className="fab fa-github text-4xl hover:text-green-700 cursor-pointer mr-3"></i>
