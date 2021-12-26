@@ -22,11 +22,11 @@ const PostPreview = ({
   slug,
 }: Props) => {
   return (
-    <div className="flex items-center border border-black bg-white p-5 m-5 rounded-lg">
-      <div className="w-5/12">
+    <div className="lg:flex lg:items-center border border-black bg-white p-5 m-5 rounded-lg">
+      <div className="max-w-md m-0 m-auto xl:m-0">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
-      <div className="w-5/12 pl-10">
+      <div className="text-center lg:text-left lg:pl-10 pt-5 lg:pt-0">
         <h3 className="text-3xl mb-3 leading-snug">
           <Link as={`/blog/${slug}`} href="/blog/[slug]">
             <a className="hover:underline">{title}</a>

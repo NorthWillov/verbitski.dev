@@ -17,10 +17,10 @@ const Project: FC<ProjectProps> = ({
   sourceLink,
 }) => {
   return (
-    <div className="w-80 flex flex-col justify-between border border-black rounded-md m-10 shadow-small hover:shadow-medium transition-shadow duration-200">
+    <div className="w-72 flex flex-col justify-between border border-black rounded-md m-10 shadow-small hover:shadow-medium transition-shadow duration-200">
       <Link href={demoLink}>
         <a target="_blank">
-          <img className="rounded-md h-80" src={img} alt="project" />
+          <img className="rounded-md w-72" src={img} alt="project" />
         </a>
       </Link>
       <h2 className="pt-2 text-center text-2xl">{title}</h2>

@@ -12,6 +12,4 @@ ogImage:
 
 ## Why charmander dont drink lime juice
 
-So that's why charmander dont drink lime juice
-
-IT is because i sad so
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.
