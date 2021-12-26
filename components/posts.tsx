@@ -9,7 +9,19 @@ const Posts = ({ posts }: Props) => {
   return (
     <section>
       <h1 className="text-3xl text-center my-10">Blogs</h1>
-      <div className="">
+
+      <iframe
+        src="https://giphy.com/embed/iG9uMrCoVtN2IIjlzw"
+        width="100%"
+        height="100%"
+        frameBorder="0"
+        className="giphy-embed pt-20"
+        allowFullScreen
+      />
+
+      <h2 className="text-xl text-center">Coming soon...</h2>
+
+      {/* <div className="">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
@@ -21,7 +33,7 @@ const Posts = ({ posts }: Props) => {
             excerpt={post.excerpt}
           />
         ))}
-      </div>
+      </div> */}
     </section>
   )
 }
