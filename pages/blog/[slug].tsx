@@ -36,9 +36,9 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 <meta name="description" content={`${post.title}`}></meta>
                 <meta
                   name="keywords"
-                  content={`verbitski.dev, verbitski, verbytskyi, ${post.author}, ${post.title}, ${post.content}`}
+                  content={`verbitski.dev, verbitski, verbytskyi, ${post.author.name}, ${post.title}`}
                 />
-                <meta name="author" content={`${post.author}`} />
+                <meta name="author" content={`${post.author.name}`} />
               </Head>
               <PostHeader
                 title={post.title}
