@@ -48,6 +48,11 @@ const Index: FC = () => {
                     <i className="fab fa-instagram text-4xl hover:text-green-700 cursor-pointer mr-3"></i>
                   </a>
                 </Link>
+                <Link href="https://dev.to/northwillov">
+                  <a target="_blank">
+                    <i className="fab fa-dev text-4xl hover:text-green-700 cursor-pointer mr-3"></i>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
