@@ -243,6 +243,7 @@ const fakeIndexOf = function (item) {
       return i;
     }
   }
+  return -1;
 };
 
 Array.prototype.fakeIndexOf = fakeIndexOf;
