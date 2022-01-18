@@ -1,8 +1,11 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
+import { useTheme } from "next-themes"
 
 export const Navbar = () => {
   const router = useRouter()
+  const { theme, setTheme } = useTheme()
+
   return (
     <nav className="flex justify-around p-3 mt-5">
       <div className="">
@@ -12,20 +15,31 @@ export const Navbar = () => {
       </div>
       <div>
         <ul className="flex">
-          <li className={router.pathname == "/" ? "underline" : ""}>
+          <li className={`${router.pathname == "/" ? "underline" : ""} pr-6 tracking-wide`}>
             <Link href="/">
-              <a className="p-3">ABOUT</a>
+              <a>ABOUT</a>
             </Link>
           </li>
-          <li className={router.pathname == "/blog" ? "underline" : ""}>
+          <li className={`${router.pathname == "/blog" ? "underline" : ""} pr-6 tracking-wide`}>
             <Link href="/blog">
-              <a className="p-3">BLOG</a>
+              <a>BLOG</a>
             </Link>
           </li>
-          <li className={router.pathname == "/projects" ? "underline" : ""}>
+          <li className={`${router.pathname == "/projects" ? "underline" : ""} pr-6 tracking-wide`}>
             <Link href="/projects">
-              <a className="p-3">PROJECTS</a>
+              <a>PROJECTS</a>
             </Link>
+          </li>
+          <li className="w-5">
+            <button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              {theme === "dark" ? (
+                <i className="far fa-lightbulb text-xl"></i>
+              ) : (
+                <i className="fas fa-moon text-xl"></i>
+              )}
+            </button>
           </li>
         </ul>
       </div>

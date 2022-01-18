@@ -17,7 +17,7 @@ const Project: FC<ProjectProps> = ({
   sourceLink,
 }) => {
   return (
-    <div className="w-72 flex flex-col justify-between border border-neutral-300 rounded-2xl m-10 shadow-small hover:shadow-medium transition-shadow duration-200">
+    <div className="w-72 flex flex-col justify-between border border-neutral-300 rounded-2xl m-10 shadow-small hover:shadow-medium transition-shadow duration-200 dark:border-gray-600">
       <Link href={demoLink}>
         <a target="_blank">
           <img className="rounded-t-2xl w-72" src={img} alt="project" />
@@ -29,7 +29,7 @@ const Project: FC<ProjectProps> = ({
       <div className="flex justify-around p-5">
         <Link href={demoLink}>
           <a
-            className="border border-black rounded-md p-1 bg-white hover:bg-black hover:text-white"
+            className="border border-black rounded-md p-1 bg-white dark:bg-gray-800 hover:bg-gray-800 dark:hover:bg-gray-700 hover:text-white"
             target="_blank"
           >
             <i className="fas fa-play"></i> Demo
@@ -37,7 +37,7 @@ const Project: FC<ProjectProps> = ({
         </Link>
         <Link href={sourceLink}>
           <a
-            className="border border-black rounded-md p-1 bg-white hover:bg-black hover:text-white"
+            className="border border-black rounded-md p-1 bg-white dark:bg-gray-800 hover:bg-gray-800 dark:hover:bg-gray-700 hover:text-white"
             target="_blank"
           >
             <i className="fab fa-github"></i> Source

@@ -13,7 +13,7 @@ const Projects: FC = () => {
       </Head>
       <Container>
         <Navbar />
-        <h1 className="text-3xl text-center my-3">Projects</h1>
+        <h1 className="text-3xl text-center my-10">Projects</h1>
 
         <div className="flex flex-wrap justify-center">
           <Project

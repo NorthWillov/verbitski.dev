@@ -22,7 +22,7 @@ const PostPreview = ({
   slug,
 }: Props) => {
   return (
-    <div className="lg:flex lg:items-center border border-black bg-white p-5 m-5 rounded-lg">
+    <div className="lg:flex lg:items-center border border-black bg-white p-5 m-5 rounded-lg dark:bg-gray-900 dark:border-gray-600 ">
       <div className="max-w-md m-0 m-auto xl:m-0">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>

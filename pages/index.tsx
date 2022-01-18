@@ -14,13 +14,14 @@ const Index: FC = () => {
         </Head>
         <Container>
           <Navbar />
-          <div className="max-w-5xl flex justify-between content-center pt-20 flex-wrap m-0 m-auto">
+          <h1 className="text-3xl text-center my-10">About</h1>
+          <div className="max-w-5xl flex flex-wrap m-0 m-auto">
             <img
               className="w-64 h-64 rounded-full m-0 m-auto"
               srcSet="/assets/blog/authors/artem.jpeg"
               alt="Artem"
             />
-            <div className="text-center lg:text-left mt-7 lg:w-4/6">
+            <div className="text-center lg:text-left mt-10 lg:w-3/6 m-0 m-auto">
               <p>
                 <b>Hi there</b> 👋 <br />I am a software engineer with hands-on
                 to build user-friendly and professional looking sites. I have
