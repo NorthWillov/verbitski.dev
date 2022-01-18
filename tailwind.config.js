@@ -3,6 +3,15 @@ module.exports = {
   purge: ["./components/**/*.tsx", "./pages/**/*.tsx"],
   theme: {
     extend: {
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { tramsform: "rotate(-3deg)" },
+          "50%": { tramsform: "rotate(3deg)" },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 1s ease-in-out infinite",
+      },
       colors: {
         "accent-1": "#FAFAFA",
         "accent-2": "#EAEAEA",

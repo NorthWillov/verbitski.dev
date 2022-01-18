@@ -32,6 +32,7 @@ export const Navbar = () => {
           </li>
           <li className="w-5">
             <button
+            className="w-7 h-7 rounded-full hover:bg-gray-400"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
               {theme === "dark" ? (
