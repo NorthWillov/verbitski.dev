@@ -12,8 +12,11 @@ ogImage:
 ## Introduction
 
 In this article I wanted to share with you with the most popular JavaScript methods but implemented by scratch.
+
 A little understanding of how JavaScript methods works inside will always help you as a developer.
-So these are the most popular methods in JavaScript implemented from scratch. Check this out if you are interested how JavaScript methods works inside. This is also a light version of how this work, the real method specified in ECMAScript is much more complex.
+So these are the most popular methods in JavaScript implemented from scratch. Check this out if you are interested how JavaScript methods works inside.
+
+This is also a light version of how this work, the real method specified in ECMAScript is much more complex.
 
 Methods mentioned on this article are:  
 ```map, reduce, filter, sort, every, includes, slice, splice, shift, indexOf.``` 
