@@ -16,7 +16,7 @@ More and more often we hear about a relatively new web framework for developing 
 
 ## Svelte
 
-Many developers who are starting to use this technology are very satisfied. They want to keep exploring Svelte's depths and even support the project both financially and by making a contribution to the repository on the Github.
+Many developers who are starting to use this technology are very satisfied. They want to keep exploring Svelte's depths and even support the project both financially and by making a contribution to the repository on Github.
 
 But what makes Svelte stand out and make it so unique in the competition?
 
@@ -176,7 +176,7 @@ React has **42.2KB** of gzipped version, but Svelte team did something unusual a
 
 At the end of this comparison, it may seem that Svelte is the winner, and many experienced developers say that the future is behind it. But it has to be taken with a pinch of salt, React is a good technology with a large community, and for Svelte to overshadow it, it still has a lot to grow and develop.
 
-It will be good advice to get familiarize with Svelte and get something new out of it.
+It would be a good advice to get familiar with Svelte and get something new out of it.
 
 ![pigeon likes svelte](/assets/blog/ReactVsSvelte/chiken.jpeg)
 
