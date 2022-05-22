@@ -2,10 +2,7 @@
   @apply text-lg leading-relaxed;
 }
 
-.markdown p,
-.markdown ul,
-.markdown ol,
-.markdown blockquote {
+.markdown p {
   @apply my-6;
 }
 
@@ -19,4 +16,24 @@
 
 .markdown p {
   @apply text-xl font-light;
+}
+
+.markdown ul {
+  @apply mx-5 list-disc;
+}
+
+.markdown a {
+  @apply text-blue-900 underline;
+}
+
+.markdown blockquote {
+  @apply px-5 my-6 border-l-8 border-gray-400 italic;
+}
+
+.markdown strong {
+  @apply font-bold;
+}
+
+.markdown img {
+  @apply m-0 m-auto
 }
