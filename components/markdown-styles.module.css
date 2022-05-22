@@ -37,3 +37,7 @@
 .markdown img {
   @apply m-0 m-auto
 }
+
+.markdown code {
+  @apply text-lg
+}
