@@ -38,8 +38,8 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 <meta name="author" content={`${post.author.name}`} />
                 <meta property="og:type" content="article"></meta>
                 <meta property="og:url" content={`https://verbitski.dev/blog/${post.title.replace(/ /g, "-")}`}></meta>
-                <meta property="og:title" content={`post.title`}></meta>
-                <meta property="og:description" content={`post.excerpt`}></meta>
+                <meta property="og:title" content={`${post.title}`}></meta>
+                <meta property="og:description" content={`${post.excerpt}`}></meta>
               </Head>
               <PostHeader
                 title={post.title}
@@ -71,6 +71,7 @@ export async function getStaticProps({ params }: Params) {
     "slug",
     "author",
     "content",
+    "excerpt",
     "ogImage",
     "coverImage",
   ])
