@@ -33,12 +33,13 @@ const Post = ({ post, morePosts, preview }: Props) => {
             <article className="mb-32">
               <Head>
                 <title>{post.title}</title>
-                <meta name="description" content={`${post.title}`}></meta>
-                <meta
-                  name="keywords"
-                  content={`verbitski.dev, verbitski, verbytskyi, ${post.author.name}, ${post.title}`}
-                />
+                <meta name="description" content={`${post.description}`}></meta>
+                <meta name="keywords" content="javascript, webdev, software, coding, development, engineering, inclusive, community"></meta>
                 <meta name="author" content={`${post.author.name}`} />
+                <meta property="og:type" content="article"></meta>
+                <meta property="og:url" content={`https://verbitski.dev/blog/${post.title.replaceAll(" ", "-")}`}></meta>
+                <meta property="og:title" content={`post.title`}></meta>
+                <meta property="og:description" content={`post.description`}></meta>
               </Head>
               <PostHeader
                 title={post.title}
