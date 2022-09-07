@@ -19,7 +19,6 @@ const Posts = ({ posts }: Props) => {
               title={post.title}
               coverImage={post.coverImage}
               date={post.date}
-              author={post.author}
               likes={post.likes}
               comments={post.comments}
               slug={post.slug}
