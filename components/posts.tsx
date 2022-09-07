@@ -8,12 +8,14 @@ type Props = {
 const Posts = ({ posts }: Props) => {
   return (
     <section>
-      <h1 className="text-8xl pt-20">Blog</h1>
+      <h1 className="text-7xl md:text-8xl w-11/12 m-auto md:w-full md:m-0 pt-20">
+        Blog
+      </h1>
 
       <div>
         {posts.map((post) => (
           <div key={post.slug}>
-            <hr className="border-accent-1 border-2" />
+            <hr className="border-accent-1 border-2 w-11/12 m-auto md:w-full md:m-0" />
 
             <PostPreview
               title={post.title}

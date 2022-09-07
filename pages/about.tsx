@@ -12,9 +12,20 @@ const About = () => {
       </Head>
       <div className="paper-bg mt-16">
         <Container>
-          <h1 className="text-8xl pt-20">About</h1>
-          <hr className="border-accent-1 border-2" />
-          <div className="md:flex my-16 md:justify-between text-xl">
+          <h1 className="text-7xl md:text-8xl w-11/12 m-auto md:w-full md:m-0 pt-20">
+            About
+          </h1>
+
+          <hr className="border-accent-1 border-2 w-11/12 m-auto md:w-full md:m-0" />
+
+          <div className="md:flex py-16 md:justify-between text-xl w-11/12 m-auto md:w-full md:m-0">
+            <div className="w-8/12 m-auto md:hidden mb-10">
+              <img
+                className="rounded-3xl"
+                src="/assets/artem_baby.jpeg"
+                alt="artem"
+              />
+            </div>
             <div className="md:w-6/12 self-center">
               <p className="mb-5">
                 I’m a Ukrainian 🇺🇦 web developer passionate about application
@@ -28,8 +39,8 @@ const About = () => {
               </p>
               <div className="mb-16">
                 <svg
-                  width="400"
-                  height="40"
+                  width="350"
+                  height="35"
                   viewBox="0 0 400 40"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -93,7 +104,7 @@ const About = () => {
                 </Link>
               </div>
             </div>
-            <div className="md:w-4/12 mt-10 md:mt-0">
+            <div className="hidden md:block md:w-4/12">
               <img
                 className="rounded-3xl"
                 src="/assets/artem_baby.jpeg"
@@ -102,10 +113,10 @@ const About = () => {
             </div>
           </div>
 
-          <hr className="border-accent-1 border-2" />
+          <hr className="border-accent-1 border-2 w-11/12 m-auto md:w-full md:m-0" />
 
-          <div className="md:flex text-xl md:justify-between py-16">
-            <div className="md:w-4/12">
+          <div className="md:flex py-16 md:justify-between text-xl w-11/12 m-auto md:w-full md:m-0">
+            <div className="md:w-4/12 w-8/12 m-auto md:m-0 mb-10">
               <img
                 className="rounded-3xl"
                 src="/assets/laptop.jpeg"
@@ -136,9 +147,16 @@ const About = () => {
             </div>
           </div>
 
-          <hr className="border-accent-1 border-2" />
+          <hr className="border-accent-1 border-2 w-11/12 m-auto md:w-full md:m-0" />
 
-          <div className="md:flex text-xl md:justify-between py-16">
+          <div className="md:flex py-16 md:justify-between text-xl w-11/12 m-auto md:w-full md:m-0">
+            <div className="w-8/12 m-auto md:hidden mb-10">
+              <img
+                className="rounded-3xl"
+                src="/assets/kali.jpeg"
+                alt="artem"
+              />
+            </div>
             <div className="md:w-6/12 self-center">
               <h3 className="text-4xl mb-5">Cyber Security</h3>
               <p className="mb-5">
@@ -161,8 +179,12 @@ const About = () => {
                 </Link>
               </div>
             </div>
-            <div className="md:w-4/12 mt-10 md:mt-0">
-              <img className="rounded-3xl" src="/assets/kali.jpeg" alt="kali" />
+            <div className="hidden md:block md:w-4/12">
+              <img
+                className="rounded-3xl"
+                src="/assets/kali.jpeg"
+                alt="artem"
+              />
             </div>
           </div>
         </Container>

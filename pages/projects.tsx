@@ -12,8 +12,11 @@ const Projects: FC = () => {
       </Head>
       <div className="paper-bg mt-16">
         <Container>
-          <h1 className="text-8xl pt-20">Projects</h1>
-          <hr className="border-accent-1 border-2" />
+          <h1 className="text-7xl md:text-8xl w-11/12 m-auto md:w-full md:m-0 pt-20">
+            Projects
+          </h1>
+
+          <hr className="border-accent-1 border-2 w-11/12 m-auto md:w-full md:m-0" />
 
           <div className="flex flex-wrap sm:justify-between justify-center mt-20 pb-56">
             <Project

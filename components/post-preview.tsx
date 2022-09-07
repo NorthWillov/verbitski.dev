@@ -22,11 +22,11 @@ const PostPreview = ({
 }: Props) => {
   return (
     <div className="md:flex md:justify-between py-20">
-      <div className="md:w-6/12 w-9/12 m-auto md:m-0 md:mr-5">
+      <div className="md:w-6/12 w-10/12 m-auto md:m-0 md:mr-5">
         <img src={coverImage} alt="latestpost" />
       </div>
 
-      <div className="md:w-6/12 w-9/12 m-auto md:m-0 mt-8 md:mt-0 flex flex-col md:justify-between md:ml-5">
+      <div className="md:w-6/12 w-10/12 m-auto md:m-0 mt-8 md:mt-0 flex flex-col md:justify-between md:ml-5">
         <div>
           <h2 className="text-3xl mb-3">{title}</h2>
           <p className="mb-3 text-xl">{excerpt}</p>

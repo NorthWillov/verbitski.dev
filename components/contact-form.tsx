@@ -51,7 +51,7 @@ const ContactForm = () => {
   return (
     <div className="md:flex items-center py-20">
       <form
-        className="md:w-6/12 w-9/12 m-auto md:m-0 text-black md:mr-5"
+        className="md:w-6/12 w-10/12 m-auto md:m-0 text-black md:mr-5"
         onSubmit={handleSubmit}
       >
         <div className="flex justify-between">
@@ -113,7 +113,7 @@ const ContactForm = () => {
 
         {messageSend && <Feedback setMessageSend={setMessageSend} />}
       </form>
-      <div className="md:w-6/12 w-9/12 md:m-0 m-auto mt-8 md:mt-0 md:ml-5 text-xl">
+      <div className="md:w-6/12 w-10/12 md:m-0 m-auto mt-8 md:mt-0 md:ml-5 text-xl">
         <p className="mb-5">
           Feel free to contact me, I’m most interested in job offers, freelance
           jobs, and security consultations.

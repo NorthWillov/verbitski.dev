@@ -41,10 +41,15 @@ const Index = ({ latestPost, secondPost }: Props) => {
       <section className="bg-accent-2 text-5xl pt-10 lg:pt-0">
         <Container>
           <div className="md:flex md:justify-between py-14 text-center md:text-left">
+            <img
+              className="md:hidden h-48 md:h-96 rounded-full self-center mt-5 mb-5 md:mt-0 m-auto"
+              src="/assets/blog/authors/me.png"
+              alt="artem"
+            />
             <div className="md:w-3/6">
               <h1>Artem Verbitski</h1>
               <p className="text-lg">Software Engineer</p>
-              <p className="text-lg mt-5 mb-3">
+              <p className="text-lg mt-5 mb-3 md:w-full w-11/12 m-auto md:m-0 text-left">
                 Hi there 👋 I am a software engineer with hands-on to build
                 user-friendly and professional looking sites. I have knowledge
                 to solve a problem across many mediums and especially adept at
@@ -61,7 +66,7 @@ const Index = ({ latestPost, secondPost }: Props) => {
               </Link>
             </div>
             <img
-              className="h-48 md:h-96 rounded-full self-center mt-10 md:mt-0 m-auto"
+              className="hidden md:block h-48 md:h-96 rounded-full self-center mt-10 md:mt-0 m-auto"
               src="/assets/blog/authors/me.png"
               alt="artem"
             />
@@ -76,11 +81,11 @@ const Index = ({ latestPost, secondPost }: Props) => {
               Latest Articles
             </h1>
             <div className="md:flex md:justify-between pb-20">
-              <div className="w-8/12 md:w-6/12 md:mr-5 m-auto">
+              <div className="w-10/12 md:w-6/12 md:mr-5 m-auto">
                 <img src={latestPost.coverImage} alt="latestpost" />
               </div>
 
-              <div className="flex flex-col justify-between mt-0 md:ml-5 md:w-6/12 w-8/12 text-center md:text-left md:m-0 m-auto mt-8 md:mt-0">
+              <div className="flex flex-col justify-between mt-0 md:ml-5 md:w-6/12 w-10/12 text-left md:m-0 m-auto mt-8 md:mt-0">
                 <div>
                   <h2 className="text-3xl mb-3">{latestPost.title}</h2>
                   <p className="mb-3">{latestPost.excerpt}</p>
@@ -122,11 +127,11 @@ const Index = ({ latestPost, secondPost }: Props) => {
               </div>
             </div>
             <div className="md:flex md:justify-between pb-20">
-              <div className="md:hidden w-8/12 md:w-6/12 md:mr-5 m-auto">
+              <div className="md:hidden w-10/12 md:w-6/12 md:mr-5 m-auto">
                 <img src={secondPost.coverImage} alt="latestpost" />
               </div>
 
-              <div className="flex flex-col justify-between mt-0 md:mr-5 md:w-6/12 w-8/12 text-center md:text-right md:m-0 m-auto mt-8 md:mt-0">
+              <div className="flex flex-col justify-between mt-0 md:mr-5 md:w-6/12 w-10/12 text-left md:text-right md:m-0 m-auto mt-8 md:mt-0">
                 <div>
                   <h2 className="text-3xl mb-3">{secondPost.title}</h2>
                   <p className="mb-3">{secondPost.excerpt}</p>
@@ -178,7 +183,7 @@ const Index = ({ latestPost, secondPost }: Props) => {
               </Link>
             </div>
 
-            <hr />
+            <hr className="w-10/12 m-auto md:w-full md:m-0" />
 
             <h1 className="text-center text-5xl pt-20 pb-20">Latest Project</h1>
             <div className="md:flex md:justify-between text-xl mb-20">
@@ -188,21 +193,23 @@ const Index = ({ latestPost, secondPost }: Props) => {
                   alt="latest_project"
                 />
               </div>
-              <div className="md:w-6/12 w-6/12 md:text-left m-auto mt-8 md:mt-0">
-                <h2 className="text-4xl py-5">Pizzeria 'Riccardo' 🍕</h2>
+              <div className="md:w-6/12 w-10/12 md:text-left m-auto mt-8 md:mt-0">
+                <h2 className="text-4xl py-5">Pizzeria 'Riccardo'</h2>
                 <p className="pb-5">
                   Full Stack Web Application for food delivery from 'Pizzeria &
                   Restaurant - Riccardo' 👨🏻‍
                 </p>
+                <div>
+                  <h3>Technologies used:</h3>
+                  <ul className="pb-5 pl-5 list-disc">
+                    <li>React</li>
+                    <li>Typescript</li>
+                    <li>Bootstrap</li>
+                    <li>MongoDB</li>
+                    <li>Express.js</li>
+                  </ul>
+                </div>
 
-                <h3>Technologies used:</h3>
-                <ul className="pb-5 pl-5 list-disc">
-                  <li>React</li>
-                  <li>Typescript</li>
-                  <li>Bootstrap</li>
-                  <li>MongoDB</li>
-                  <li>Express.js</li>
-                </ul>
                 <div className="flex justify-between pb-5 mt-5 md:w-8/12">
                   <Link href="https://riccardopizzeria.herokuapp.com">
                     <a
@@ -231,13 +238,13 @@ const Index = ({ latestPost, secondPost }: Props) => {
               </div>
             </div>
 
-            <hr />
+            <hr className="w-10/12 m-auto md:w-full md:m-0" />
 
             <h1 className="text-center text-5xl pt-20">Contact me</h1>
 
             <ContactForm />
 
-            <hr className="pb-20" />
+            <hr className="w-10/12 m-auto md:w-full md:m-0 pb-20" />
           </Container>
         </div>
       </section>
