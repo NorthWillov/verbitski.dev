@@ -1,21 +1,13 @@
 module.exports = {
-  darkMode: "class",
   purge: ["./components/**/*.tsx", "./pages/**/*.tsx"],
   theme: {
     extend: {
-      keyframes: {
-        wiggle: {
-          "0%, 100%": { tramsform: "rotate(-3deg)" },
-          "50%": { tramsform: "rotate(3deg)" },
-        },
-      },
-      animation: {
-        wiggle: "wiggle 1s ease-in-out infinite",
-      },
       colors: {
-        "accent-1": "#FAFAFA",
-        "accent-2": "#EAEAEA",
-        "accent-7": "#333",
+        "accent-1": "#0D1B34",
+        "accent-2": "#BDC6D7",
+        "accent-3": "#14A6A8",
+        "accent-4": "#3A3A3A",
+        "accent-5": "#C0C0C0",
         success: "#0070f3",
         cyan: "#79FFE1",
       },
@@ -28,6 +20,11 @@ module.exports = {
       lineHeight: {
         tight: 1.2,
       },
+      fontFamily: {
+        sans: ["ubunturegular", "sans-serif"],
+        serif: ["Arial", "serif"],
+        bold: ["ubuntubold", "sans-serif"],
+      },
       fontSize: {
         "5xl": "2.5rem",
         "6xl": "2.75rem",
@@ -38,6 +35,9 @@ module.exports = {
         small: "0 5px 10px rgba(0, 0, 0, 0.12)",
         medium: "0 8px 30px rgba(0, 0, 0, 0.12)",
       },
+      height: {
+        100: "30rem",
+      },
     },
   },
-}
+};

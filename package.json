@@ -7,6 +7,8 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
+    "axios": "^0.27.2",
     "classnames": "2.3.1",
     "date-fns": "2.21.3",
     "gray-matter": "4.0.3",
@@ -34,6 +36,7 @@
     "@types/react-dom": "^17.0.5",
     "autoprefixer": "^10.2.5",
     "postcss": "^8.3.0",
+    "postcss-import": "^15.0.0",
     "tailwindcss": "^2.1.2"
   }
 }

@@ -1,23 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap");
+@import "tailwindcss/base";
+@import "./fonts.css";
 
-@tailwind base;
+@import "tailwindcss/components";
+@import "./components/slider.css";
+@import "./components/blue-bs.css";
+@import "./components/paper-bg.css";
 
-/* Write your own custom base styles here */
-
-/* Start purging... */
-@tailwind components;
-/* Stop purging. */
-
-/* Write you own custom component styles here */
-
-/* Start purging... */
-@tailwind utilities;
-/* Stop purging. */
-
-/* Your own custom utilities */
-
-@layer base {
-  body {
-    font-family: Mukta, serif;
-  }
-}
+@import "tailwindcss/utilities";

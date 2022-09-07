@@ -1,0 +1,17 @@
+.blue-bg {
+  position: relative;
+}
+
+.blue-bg::before {
+  content: "";
+  background-image: url("/assets/home_bg.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}

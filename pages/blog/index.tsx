@@ -1,44 +1,56 @@
-import Container from "../../components/container"
-import Posts from "../../components/posts"
-import Layout from "../../components/layout"
-import Navbar from "../../components/navbar"
-import { getAllPosts } from "../../lib/api"
-import Head from "next/head"
-import Post from "../../types/post"
+import Container from "../../components/container";
+import Posts from "../../components/posts";
+import Layout from "../../components/layout";
+import { getAllPosts } from "../../lib/api";
+import axios from "axios";
+import Head from "next/head";
+import Post from "../../types/post";
+import { all } from "remark-rehype";
 
 type Props = {
-  allPosts: Post[]
-}
+  allPosts: Post[];
+};
 
 const Index = ({ allPosts }: Props) => {
   return (
-    <>
-      <Layout>
-        <Head>
-          <title>Verbitski | Software Developer</title>
-        </Head>
+    <Layout>
+      <Head>
+        <title>Verbitski | Software Developer</title>
+      </Head>
+      <div className="paper-bg mt-16">
         <Container>
-          <Navbar />
           {allPosts.length > 0 && <Posts posts={allPosts} />}
         </Container>
-      </Layout>
-    </>
-  )
-}
+      </div>
+    </Layout>
+  );
+};
 
-export default Index
+export default Index;
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
+  const res = await axios.get(
+    "https://dev.to/api/articles?username=northwillov"
+  );
+
+  const getPosts = getAllPosts([
     "title",
     "date",
     "slug",
     "author",
     "coverImage",
     "excerpt",
-  ])
+  ]);
+
+  const allPosts = getPosts.map((post, idx) => {
+    return {
+      ...post,
+      likes: res.data[idx].public_reactions_count,
+      comments: res.data[idx].comments_count,
+    };
+  });
 
   return {
     props: { allPosts },
-  }
-}
+  };
+};
