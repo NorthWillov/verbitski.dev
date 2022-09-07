@@ -3,6 +3,8 @@ import Feedback from "./feedback";
 import emailjs from "@emailjs/browser";
 import Spinner from "./spinner";
 
+declare var process: { env: { [key: string]: string } };
+
 const ContactForm = () => {
   const [toSend, setToSend] = useState({
     to_name: "Artem",
