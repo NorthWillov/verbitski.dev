@@ -59,7 +59,6 @@ const Post = ({ post, morePosts, preview }: Props) => {
                   date={post.date}
                   author={post.author}
                 />
-                <hr className="border-accent-1 border-2 mb-10" />
                 <PostBody content={post.content} />
               </article>
             </>
