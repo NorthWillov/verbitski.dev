@@ -3,8 +3,6 @@ import Feedback from "./feedback";
 import emailjs from "@emailjs/browser";
 import Spinner from "./spinner";
 
-declare var process: { env: { [key: string]: string } };
-
 const ContactForm = () => {
   const [toSend, setToSend] = useState({
     to_name: "Artem",
@@ -22,10 +20,10 @@ const ContactForm = () => {
     setIsLoading(true);
     emailjs
       .send(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
+        "service_t4r731i",
+        "template_ia6j8sp",
         toSend,
-        process.env.EMAIL_JS_USER_ID
+        "mbyI7ZvGSZLs24uFu"
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
