@@ -6,5 +6,7 @@
 @import "./components/blue-bs.css";
 @import "./components/paper-bg.css";
 @import "./components/navbar.css";
+@import "./components/loading-page.css";
+@import "./components/hexagon.css";
 
 @import "tailwindcss/utilities";
