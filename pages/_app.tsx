@@ -12,6 +12,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     window.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
+
         setTimeout(() => {
           setIsFaded(true);
         }, 1000);
