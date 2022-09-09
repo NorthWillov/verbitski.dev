@@ -20,7 +20,7 @@ const Projects: FC = () => {
 
           <div className="flex flex-wrap sm:justify-between justify-center mt-20 pb-56">
             <Project
-              img="/assets/projects/pizza-wege.png"
+              img="/assets/projects/pizza-wege.jpeg"
               title="Pizzeria 'Riccardo' 🍕"
               desc="Full Stack Web Application for food delivery from 'Pizzeria & Restaurant - Riccardo' 👨🏻‍🍳"
               demoLink="https://riccardopizzeria.herokuapp.com"
@@ -36,7 +36,7 @@ const Projects: FC = () => {
             />
 
             <Project
-              img="/assets/projects/star_wars.png"
+              img="/assets/projects/star_wars.jpeg"
               title="Star Wars Characters Catalogue"
               desc="Catalogue, containing all data about 'Star Wars' foes."
               demoLink="https://northwillov.github.io/virtuslab"

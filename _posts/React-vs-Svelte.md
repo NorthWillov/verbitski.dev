@@ -1,7 +1,7 @@
 ---
 title: "React vs Svelte"
 excerpt: "A comparison of 2 popular technologies for UI web development. Which of these two you should choose to create your next project. Also, we will consider about which technology to choose for beginners to learn. What are the pros and cons of them at the moment, and about their prospects."
-coverImage: "/assets/blog/ReactVsSvelte/reactvssvelte.jpg"
+coverImage: "/assets/blog/ReactVsSvelte/reactvssvelte.jpeg"
 date: "2022-05-22T05:35:07.322Z"
 author:
   name: Artem Verbitski

@@ -16,7 +16,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         setTimeout(() => {
           setIsFaded(true);
         }, 1000);
-      }, 1000);
+      }, 300);
     };
   }, []);
 

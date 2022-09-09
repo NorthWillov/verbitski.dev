@@ -43,7 +43,7 @@ const Index = ({ latestPost, secondPost }: Props) => {
           <div className="md:flex md:justify-between py-14 text-center md:text-left">
             <img
               className="md:hidden h-48 md:h-96 rounded-full self-center mt-5 mb-5 md:mt-0 m-auto"
-              src="/assets/blog/authors/me.png"
+              src="/assets/blog/authors/me.jpeg"
               alt="artem"
             />
             <div className="md:w-3/6">
@@ -67,7 +67,7 @@ const Index = ({ latestPost, secondPost }: Props) => {
             </div>
             <img
               className="hidden md:block h-48 md:h-96 rounded-full self-center mt-10 md:mt-0 m-auto"
-              src="/assets/blog/authors/me.png"
+              src="/assets/blog/authors/me.jpeg"
               alt="artem"
             />
           </div>

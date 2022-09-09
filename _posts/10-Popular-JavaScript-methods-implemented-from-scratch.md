@@ -1,7 +1,7 @@
 ---
 title: "10 Popular JavaScript methods implemented from scratch"
 excerpt: "These are the 10 most popular methods in JavaScript implemented from scratch. Check this out if you are interested how JavaScript methods works inside"
-coverImage: "/assets/blog/JS10Methods/JSmethodsImage.jpg"
+coverImage: "/assets/blog/JS10Methods/JSmethodsImage.jpeg"
 date: "2022-01-08T05:35:07.322Z"
 author:
   name: Artem Verbitski
