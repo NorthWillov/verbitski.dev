@@ -11,7 +11,7 @@ export const Navbar = () => {
     <div className="bg-accent-1 text-white py-5 fixed top-0 left-0 right-0 z-30">
       <Container>
         <div className="flex justify-between">
-          <Link href="/">
+          <Link scroll={false} href="/">
             <a className="text-xl font-bold ml-5 md:ml-0">VERBITSKI</a>
           </Link>
           <nav className="md:flex items-center space-x-8">
@@ -51,7 +51,7 @@ export const Navbar = () => {
                       router.pathname == "/" ? "underline" : ""
                     } burger-item`}
                   >
-                    <Link href="/">
+                    <Link scroll={false} href="/">
                       <a>HOME</a>
                     </Link>
                   </li>
@@ -60,7 +60,7 @@ export const Navbar = () => {
                       router.pathname == "/about" ? "underline" : ""
                     } burger-item`}
                   >
-                    <Link href="/about">
+                    <Link scroll={false} href="/about">
                       <a>ABOUT</a>
                     </Link>
                   </li>
@@ -69,7 +69,7 @@ export const Navbar = () => {
                       router.pathname == "/blog" ? "underline" : ""
                     } burger-item`}
                   >
-                    <Link href="/blog">
+                    <Link scroll={false} href="/blog">
                       <a>BLOG</a>
                     </Link>
                   </li>
@@ -78,7 +78,7 @@ export const Navbar = () => {
                       router.pathname == "/projects" ? "underline" : ""
                     } burger-item`}
                   >
-                    <Link href="/projects">
+                    <Link scroll={false} href="/projects">
                       <a>PROJECTS</a>
                     </Link>
                   </li>
@@ -87,7 +87,7 @@ export const Navbar = () => {
                       router.pathname == "/contact" ? "underline" : ""
                     } burger-item`}
                   >
-                    <Link href="/contact">
+                    <Link scroll={false} href="/contact">
                       <a>CONTACT</a>
                     </Link>
                   </li>
@@ -101,7 +101,7 @@ export const Navbar = () => {
               <li
                 className={`${router.pathname == "/" ? "underline" : ""}`}
               >
-                <Link href="/">
+                <Link scroll={false} href="/">
                   <a>HOME</a>
                 </Link>
               </li>
@@ -110,7 +110,7 @@ export const Navbar = () => {
                   router.pathname == "/about" ? "underline" : ""
                 }`}
               >
-                <Link href="/about">
+                <Link scroll={false} href="/about">
                   <a>ABOUT</a>
                 </Link>
               </li>
@@ -119,7 +119,7 @@ export const Navbar = () => {
                   router.pathname == "/blog" ? "underline" : ""
                 }`}
               >
-                <Link href="/blog">
+                <Link scroll={false} href="/blog">
                   <a>BLOG</a>
                 </Link>
               </li>
@@ -128,7 +128,7 @@ export const Navbar = () => {
                   router.pathname == "/projects" ? "underline" : ""
                 }`}
               >
-                <Link href="/projects">
+                <Link scroll={false} href="/projects">
                   <a>PROJECTS</a>
                 </Link>
               </li>
@@ -137,7 +137,7 @@ export const Navbar = () => {
                   router.pathname == "/contact" ? "underline" : ""
                 }`}
               >
-                <Link href="/contact">
+                <Link scroll={false} href="/contact">
                   <a>CONTACT</a>
                 </Link>
               </li>

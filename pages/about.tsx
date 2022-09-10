@@ -97,7 +97,7 @@ const About = () => {
                 </svg>
               </div>
               <div className="flex">
-                <Link href="/contact">
+                <Link scroll={false} href="/contact">
                   <a className="text-lg text-white bg-accent-3 p-3 rounded-lg w-5/12 text-center">
                     Contact me
                   </a>
@@ -138,7 +138,7 @@ const About = () => {
                 or brand new from scratch 😉
               </p>
               <div className="flex">
-                <Link href="/contact">
+                <Link scroll={false} href="/contact">
                   <a className="text-lg text-white bg-accent-3 p-3 rounded-lg w-5/12 text-center">
                     Contact me
                   </a>
@@ -172,7 +172,7 @@ const About = () => {
                 engineering teams to take preventative measures
               </p>
               <div className="flex">
-                <Link href="/contact">
+                <Link scroll={false} href="/contact">
                   <a className="text-lg text-white bg-accent-3 p-3 rounded-lg w-5/12 text-center">
                     Contact me
                   </a>

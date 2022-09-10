@@ -34,7 +34,7 @@ const PostPreview = ({
         </div>
 
         <div className="flex justify-between items-center mt-8 md:mt-0">
-          <Link href={`/blog/${slug}`}>
+          <Link scroll={false} href={`/blog/${slug}`}>
             <a className="text-lg text-white bg-accent-3 p-3 rounded-lg">
               Read more
             </a>

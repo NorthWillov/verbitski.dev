@@ -59,7 +59,7 @@ const Index = ({ latestPost, secondPost }: Props) => {
                 as a developer and designer as part of a quality-driven team to
                 build easy-to-use and professional looking sites.
               </p>
-              <Link href="/about">
+              <Link scroll={false} href="/about">
                 <a className="text-lg text-white bg-accent-3 p-3 rounded-lg">
                   Learn more about me
                 </a>
@@ -93,7 +93,7 @@ const Index = ({ latestPost, secondPost }: Props) => {
                 </div>
 
                 <div className="flex justify-between mt-7">
-                  <Link href={`/blog/${latestPost.slug}`}>
+                  <Link scroll={false} href={`/blog/${latestPost.slug}`}>
                     <a className="text-lg text-white bg-accent-3 p-3 rounded-lg">
                       Read more
                     </a>
@@ -164,7 +164,7 @@ const Index = ({ latestPost, secondPost }: Props) => {
                     </svg>
                     <span className="ml-1">{secondPost.comments}</span>
                   </div>
-                  <Link href={`/blog/${secondPost.slug}`}>
+                  <Link scroll={false} href={`/blog/${secondPost.slug}`}>
                     <a className="text-lg text-white bg-accent-3 p-3 rounded-lg">
                       Read more
                     </a>
@@ -176,7 +176,7 @@ const Index = ({ latestPost, secondPost }: Props) => {
               </div>
             </div>
             <div className="flex justify-center mb-20 mt-5">
-              <Link href={`/blog`}>
+              <Link scroll={false} href={`/blog`}>
                 <a className="text-lg text-white bg-accent-3 px-10 py-3 rounded-lg">
                   Read more Articles
                 </a>
@@ -229,7 +229,7 @@ const Index = ({ latestPost, secondPost }: Props) => {
                   </Link>
                 </div>
                 <div className="flex">
-                  <Link href="/projects">
+                  <Link scroll={false} href="/projects">
                     <a className="text-lg text-white bg-accent-3 p-3 rounded-lg md:w-8/12 w-full text-center">
                       Check all projects
                     </a>

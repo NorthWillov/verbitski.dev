@@ -1,6 +1,7 @@
 import { AppProps } from "next/app";
 import { ThemeProvider } from "next-themes";
 import "../styles/index.css";
+import Transition from "../components/transition";
 import { useEffect, useState } from "react";
 import LoadingPage from "../components/loading-page";
 
@@ -9,21 +10,29 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const [isFaded, setIsFaded] = useState(false);
 
   useEffect(() => {
-    window.onload = () => {
+    const handler = () => {
       setTimeout(() => {
         setIsLoading(false);
-
         setTimeout(() => {
           setIsFaded(true);
         }, 1000);
       }, 300);
     };
+
+    if (document.readyState === "complete") {
+      handler();
+    } else {
+      window.addEventListener("load", handler);
+      return () => removeEventListener("load", handler);
+    }
   }, []);
 
   return (
     <ThemeProvider attribute="class">
       <LoadingPage isLoading={isLoading} isFaded={isFaded} />
-      <Component {...pageProps} />
+      <Transition>
+        <Component {...pageProps} />
+      </Transition>
     </ThemeProvider>
   );
 }

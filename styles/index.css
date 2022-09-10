@@ -8,5 +8,6 @@
 @import "./components/navbar.css";
 @import "./components/loading-page.css";
 @import "./components/hexagon.css";
+@import "./transition.css";
 
 @import "tailwindcss/utilities";
