@@ -33,7 +33,7 @@ export const Navbar = () => {
                   onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
                 >
                   <svg
-                    className="h-8 w-8 text-white"
+                    className="h-14 w-14 text-white"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
