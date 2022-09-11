@@ -28,11 +28,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <ThemeProvider attribute="class">
+    <>
       <LoadingPage isLoading={isLoading} isFaded={isFaded} />
       <Transition>
         <Component {...pageProps} />
       </Transition>
-    </ThemeProvider>
+    </>
   );
 }
