@@ -10,7 +10,7 @@ const Contact = () => {
       <Head>
         <title>Verbitski | Software Developer</title>
       </Head>
-      <div className="paper-bg mt-16">
+      <div className="paper-bg mt-16 text-black">
         <Container>
           <h1 className="text-7xl md:text-8xl w-11/12 m-auto md:w-full md:m-0 pt-20 text-center md:text-left">
             Contact

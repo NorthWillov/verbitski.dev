@@ -30,7 +30,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
             <PostTitle>Loading…</PostTitle>
           ) : (
             <>
-              <article className="pb-32">
+              <article className="pb-32 text-black">
                 <Head>
                   <title>{post.title}</title>
                   <meta name="description" content={`${post.excerpt}`}></meta>

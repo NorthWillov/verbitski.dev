@@ -46,7 +46,7 @@ const Index = ({ latestPost, secondPost }: Props) => {
               src="/assets/blog/authors/me.jpeg"
               alt="artem"
             />
-            <div className="md:w-3/6">
+            <div className="md:w-3/6 text-black">
               <h1>Artem Verbitski</h1>
               <p className="text-lg">Software Engineer</p>
               <p className="text-lg mt-5 mb-3 md:w-full w-11/12 m-auto md:m-0 text-left">

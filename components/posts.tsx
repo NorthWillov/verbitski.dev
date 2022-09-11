@@ -7,8 +7,8 @@ type Props = {
 
 const Posts = ({ posts }: Props) => {
   return (
-    <section>
-      <h1 className="text-7xl md:text-8xl w-11/12 m-auto md:w-full md:m-0 pt-20">
+    <section className="text-black">
+      <h1 className="text-7xl md:text-8xl w-11/12 m-auto md:w-full md:m-0 pt-20 ">
         Blog
       </h1>
 
