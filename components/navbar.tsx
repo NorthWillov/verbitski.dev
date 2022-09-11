@@ -97,7 +97,7 @@ export const Navbar = () => {
 
             {/* DESCTOP SECTION */}
 
-            <ul className="hidden space-x-8 md:flex">
+            <ul className="hidden space-x-6 md:flex">
               <li
                 className={`${router.pathname == "/" ? "underline" : ""}`}
               >
