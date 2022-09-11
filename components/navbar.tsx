@@ -95,7 +95,7 @@ export const Navbar = () => {
               </div>
             </section>
 
-            {/* DESCTOP SECTION */}
+            {/* DESKTOP SECTION */}
 
             <ul className="hidden space-x-6 md:flex">
               <li

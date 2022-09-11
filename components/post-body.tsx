@@ -12,7 +12,7 @@ const PostBody = ({ content }: Props) => {
         dangerouslySetInnerHTML={{ __html: content }}
       />
       <p className="text-center mt-20">
-        Like and comment this arcticle on{" "}
+        Like and comment this article on{" "}
         <a
           className="text-blue-500"
           href="https://dev.to/northwillov"
