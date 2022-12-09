@@ -73,7 +73,8 @@ export const Navbar = () => {
                       <a>BLOG</a>
                     </Link>
                   </li>
-                  <li
+                  {/* **Projects are outdated** UPDATE REQUIRE */}
+                  {/* <li
                     className={`${
                       router.pathname == "/projects" ? "underline" : ""
                     } burger-item`}
@@ -81,7 +82,7 @@ export const Navbar = () => {
                     <Link scroll={false} href="/projects">
                       <a>PROJECTS</a>
                     </Link>
-                  </li>
+                  </li> */}
                   <li
                     className={`${
                       router.pathname == "/contact" ? "underline" : ""
@@ -123,7 +124,8 @@ export const Navbar = () => {
                   <a>BLOG</a>
                 </Link>
               </li>
-              <li
+              {/* **Projects are outdated** UPDATE REQUIRE */}
+              {/* <li
                 className={`${
                   router.pathname == "/projects" ? "underline" : ""
                 }`}
@@ -131,7 +133,7 @@ export const Navbar = () => {
                 <Link scroll={false} href="/projects">
                   <a>PROJECTS</a>
                 </Link>
-              </li>
+              </li> */}
               <li
                 className={`${
                   router.pathname == "/contact" ? "underline" : ""

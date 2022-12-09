@@ -1,12 +1,12 @@
 import { ReactNode } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import { useRouter } from "next/router";
 
 type Props = {
   children: ReactNode;
 };
 
-const variants = {
+const variants: Variants = {
   inactive: {
     opacity: 1,
     transition: {
