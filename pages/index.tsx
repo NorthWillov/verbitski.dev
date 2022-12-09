@@ -41,8 +41,9 @@ const Index = ({ latestPost, secondPost }: Props) => {
           <Container>
             <LatestArticles latestPost={latestPost} secondPost={secondPost} />
             <hr className="w-10/12 m-auto md:w-full md:m-0" />
-            <LatestProject />
-            <hr className="w-10/12 m-auto md:w-full md:m-0" />
+            {/* **Projects are outdated** UPDATE REQUIRE */}
+            {/* <LatestProject />
+            <hr className="w-10/12 m-auto md:w-full md:m-0" /> */}
             <h1 className="text-center text-5xl pt-20">Contact me</h1>
             <ContactForm />
             <hr className="w-10/12 m-auto md:w-full md:m-0 pb-20" />
