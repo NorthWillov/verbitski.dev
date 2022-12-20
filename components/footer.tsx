@@ -23,7 +23,7 @@ const Footer = () => {
           <i className="fa-brands fa-github text-5xl"></i>
         </a>
       </div>
-      <span>© 2022 Artem Verbitski</span>
+      <span>© 2023 Artem Verbitski</span>
     </footer>
   );
 };
