@@ -20,10 +20,10 @@ const ContactForm = () => {
     setIsLoading(true);
     emailjs
       .send(
-        "service_t4r731i",
-        "template_ia6j8sp",
+        "service_c6nswei",
+        "template_z8sjzbo",
         toSend,
-        "mbyI7ZvGSZLs24uFu"
+        "zFJk94VehvF2ty6gT"
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
