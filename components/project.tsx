@@ -17,23 +17,28 @@ const Project: FC<ProjectProps> = ({
   sourceLink,
 }) => {
   return (
-    <div className="bg-white w-72 flex flex-col justify-between rounded-2xl shadow-small hover:shadow-medium transition-shadow duration-200 mb-10">
-      <Link href={demoLink}>
-        <a target="_blank">
-          <img className="rounded-t-2xl w-72" src={img} alt="project" />
-        </a>
-      </Link>
-      <div>
-        <h2 className="pt-2 text-center text-2xl">{title}</h2>
-        <p className="text-center p-2">{desc}</p>
+    <div className="w-full rounded-2xl flex my-5 h-82 flex-col md:flex-row justify-center">
+      <div className="md:w-1/2 w-full p-3 flex items-center">
+        <Link href={demoLink}>
+          <a target="_blank">
+            <img className="rounded-2xl h-auto w-full" src={img} alt="project" />
+          </a>
+        </Link>
+      </div>
 
-        <div className="flex justify-around p-5">
+      <div className="md:w-1/2 w-full flex flex-col justify-between px-5">
+        <div>
+          <h2 className="pt-4 pb-3 text-left text-2xl">{title}</h2>
+          <p className="text-left pb-5">{desc}</p>
+        </div>
+
+        <div className="flex justify-between pb-4">
           <Link href={demoLink}>
             <a
               className="text-lg text-white bg-accent-3 py-2 rounded-lg w-3/6 text-center"
               target="_blank"
             >
-              <i className="fas fa-play"></i> Demo
+              <i className="fas fa-play"></i> Link
             </a>
           </Link>
           <Link href={sourceLink}>

@@ -20,27 +20,27 @@ const Projects: FC = () => {
 
           <div className="flex flex-wrap sm:justify-between justify-center mt-20 pb-56">
             <Project
-              img="/assets/projects/pizza-wege.jpeg"
+              img="/assets/projects/mediavibes.jpg"
+              title="Media Agency - mediavibes"
+              desc="Mediavibes is a versatile media agency that specializes in creating, managing, and optimizing advertising campaigns across various platforms. With a network of affiliated companies and partners, they cater to clients' needs at local, national, and international levels. Their services encompass product and brand advertising, bolstering brand image, and reaching target audiences effectively."
+              demoLink="https://dommediowymv.pl"
+              sourceLink="https://github.com/NorthWillov"
+            />
+
+            <Project
+              img="/assets/projects/omb.jpeg"
+              title="National Business Meetings"
+              desc="National Business Meetings are pivotal gatherings that convene professionals and stakeholders from various industries within a country to exchange insights, foster collaboration, and explore growth opportunities. These events serve as a platform for networking, knowledge sharing, and discussing emerging trends that influence the business landscape."
+              demoLink="https://4dobrybiznes.pl"
+              sourceLink="https://github.com/NorthWillov"
+            />
+
+            <Project
+              img="/assets/projects/ricardo.jpg"
               title="Pizzeria 'Riccardo' 🍕"
-              desc="Full Stack Web Application for food delivery from 'Pizzeria & Restaurant - Riccardo' 👨🏻‍🍳"
-              demoLink="https://riccardopizzeria.herokuapp.com"
+              desc="Pizzeria 'Riccardo' 🍕 is a cutting-edge Full Stack Web Application designed to revolutionize the food delivery experience from 'Pizzeria & Restaurant - Riccardo' 👨🏻‍🍳. This digital platform seamlessly connects hungry customers with the delectable offerings of Riccardo's renowned culinary expertise, all from the comfort of their screens."
+              demoLink="https://github.com/NorthWillov"
               sourceLink="https://github.com/NorthWillov/food_service"
-            />
-
-            <Project
-              img="/assets/projects/colors_app.png"
-              title="Clone of Flat UI Colors"
-              desc="A clone of websites like Flat UI Colors and Material UI Colors."
-              demoLink="https://northwillov.github.io/colors-app"
-              sourceLink="https://github.com/NorthWillov/colors-app"
-            />
-
-            <Project
-              img="/assets/projects/star_wars.jpeg"
-              title="Star Wars Characters Catalogue"
-              desc="Catalogue, containing all data about 'Star Wars' foes."
-              demoLink="https://northwillov.github.io/virtuslab"
-              sourceLink="https://github.com/NorthWillov/virtuslab"
             />
           </div>
         </Container>
