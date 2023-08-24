@@ -38,7 +38,7 @@ const Projects: FC = () => {
             <Project
               img="/assets/projects/ricardo.jpg"
               title="Pizzeria 'Riccardo' 🍕"
-              desc="Pizzeria 'Riccardo' 🍕 is a cutting-edge Full Stack Web Application designed to revolutionize the food delivery experience from 'Pizzeria & Restaurant - Riccardo' 👨🏻‍🍳. This digital platform seamlessly connects hungry customers with the delectable offerings of Riccardo's renowned culinary expertise, all from the comfort of their screens."
+              desc="Pizzeria 'Riccardo' is a cutting-edge Full Stack Web Application designed to revolutionize the food delivery experience from 'Pizzeria & Restaurant - Riccardo' 👨🏻‍🍳. This digital platform seamlessly connects hungry customers with the delectable offerings of Riccardo's renowned culinary expertise, all from the comfort of their screens."
               demoLink="https://github.com/NorthWillov"
               sourceLink="https://github.com/NorthWillov/food_service"
             />
