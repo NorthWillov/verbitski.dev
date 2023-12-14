@@ -20,7 +20,7 @@ const Project: FC<ProjectProps> = ({
 }) => {
   return (
     <div className="w-full flex my-5 h-82 flex-col md:flex-row justify-center">
-      <div className="md:w-1/2 w-full p-3 flex items-center">
+      <div className="md:w-1/2 w-full p-3 flex items-center transition duration-500 ease-in-out transform hover:scale-105">
         <Link href={demoLink}>
           <a target="_blank">
             <img className="h-auto w-full" src={img} alt="project" />

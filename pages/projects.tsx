@@ -20,7 +20,7 @@ const Projects: FC = () => {
 
           <div className="flex flex-wrap sm:justify-between justify-center mt-20 pb-56">
             <Project
-              img="/assets/projects/clubsapp.jpeg"
+              img="/assets/projects/clubsapp.png"
               title="Clubs App"
               desc="Unlock the Potential of Communication with Clubs App. Connect with a community of different kind of people. Our platform connects you with a global community of of like-minded people. Create or find clubs of similar interests absolutely free of charge. All participants are verified and you can be sure that you are communicating with real people. Our platform helps increase foot traffic and boost sales for business
 
@@ -31,7 +31,7 @@ const Projects: FC = () => {
             />
 
             <Project
-              img="/assets/projects/michael.jpeg"
+              img="/assets/projects/michael.png"
               title="Michał Potratz - Camera Operator"
               desc="Michał Potratz. Camera Operator, film editor and journalist student. My experience gain in TV, movie plans and making my own production. I have a pleasure to work on production for EPEE, Betclic, Just Dance, Mitusbishi Electric, television TBN Poland (TBN Polska), Orange. With the pleasure i gonna realize your idea on the highets level. Check out my portfolio on main site!"
               demoLink="https://www.michaelpotratz.com/"
