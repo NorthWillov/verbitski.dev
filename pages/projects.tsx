@@ -20,11 +20,49 @@ const Projects: FC = () => {
 
           <div className="flex flex-wrap sm:justify-between justify-center mt-20 pb-56">
             <Project
-              img="/assets/projects/mediavibes.jpg"
+              img="/assets/projects/clubsapp.jpeg"
+              title="Clubs App"
+              desc="Unlock the Potential of Communication with Clubs App. Connect with a community of different kind of people. Our platform connects you with a global community of of like-minded people. Create or find clubs of similar interests absolutely free of charge. All participants are verified and you can be sure that you are communicating with real people. Our platform helps increase foot traffic and boost sales for business
+
+              "
+              demoLink="https://web-solution.vercel.app/"
+              sourceLink="https://github.com/NorthWillov/web-solution"
+              technologies={["React.js", "Next.js", "Vercel", "Mailchimp"]}
+            />
+
+            <Project
+              img="/assets/projects/michael.jpeg"
+              title="Michał Potratz - Camera Operator"
+              desc="Michał Potratz. Camera Operator, film editor and journalist student. My experience gain in TV, movie plans and making my own production. I have a pleasure to work on production for EPEE, Betclic, Just Dance, Mitusbishi Electric, television TBN Poland (TBN Polska), Orange. With the pleasure i gonna realize your idea on the highets level. Check out my portfolio on main site!"
+              demoLink="https://www.michaelpotratz.com/"
+              sourceLink="https://github.com/NorthWillov/michal-operator"
+              technologies={["React.js", "MongoDB", "Express.js"]}
+            />
+
+            <Project
+              img="/assets/projects/mediavibes.jpeg"
               title="Media Agency - mediavibes"
-              desc="Mediavibes is a versatile media agency that specializes in creating, managing, and optimizing advertising campaigns across various platforms. With a network of affiliated companies and partners, they cater to clients' needs at local, national, and international levels. Their services encompass product and brand advertising, bolstering brand image, and reaching target audiences effectively."
+              desc="Mediavibes is a versatile media agency that specializes in creating, managing, and optimizing advertising campaigns across various platforms. Their services encompass product and brand advertising, bolstering brand image, and reaching target audiences effectively."
               demoLink="https://dommediowymv.pl"
               sourceLink="https://github.com/NorthWillov"
+              technologies={["React.js", "Next.js", "Vercel"]}
+            />
+
+            <Project
+              img="/assets/projects/riccardo.jpeg"
+              title="Pizzeria 'Riccardo' 🍕"
+              desc="Pizzeria 'Riccardo' is a cutting-edge Full Stack Web Application designed to revolutionize the food delivery experience from 'Pizzeria & Restaurant - Riccardo' 👨🏻‍🍳. This digital platform seamlessly connects hungry customers with the delectable offerings of Riccardo's renowned culinary expertise, all from the comfort of their screens."
+              demoLink="https://riccardo.onrender.com/"
+              sourceLink="https://github.com/NorthWillov/food_service"
+              technologies={[
+                "React.js",
+                "Redux",
+                "Typescript",
+                "Webpack",
+                "MongoDB",
+                "Express.js",
+                "Bootstrap",
+              ]}
             />
 
             <Project
@@ -33,14 +71,7 @@ const Projects: FC = () => {
               desc="National Business Meetings are pivotal gatherings that convene professionals and stakeholders from various industries within a country to exchange insights, foster collaboration, and explore growth opportunities. These events serve as a platform for networking, knowledge sharing, and discussing emerging trends that influence the business landscape."
               demoLink="https://4dobrybiznes.pl"
               sourceLink="https://github.com/NorthWillov"
-            />
-
-            <Project
-              img="/assets/projects/ricardo.jpg"
-              title="Pizzeria 'Riccardo' 🍕"
-              desc="Pizzeria 'Riccardo' is a cutting-edge Full Stack Web Application designed to revolutionize the food delivery experience from 'Pizzeria & Restaurant - Riccardo' 👨🏻‍🍳. This digital platform seamlessly connects hungry customers with the delectable offerings of Riccardo's renowned culinary expertise, all from the comfort of their screens."
-              demoLink="https://riccardo.onrender.com/"
-              sourceLink="https://github.com/NorthWillov/food_service"
+              technologies={["React.js", "Next.js", "Vercel"]}
             />
           </div>
         </Container>

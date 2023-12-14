@@ -7,6 +7,7 @@ type ProjectProps = {
   desc: string;
   demoLink: string;
   sourceLink: string;
+  technologies: string[];
 };
 
 const Project: FC<ProjectProps> = ({
@@ -15,13 +16,14 @@ const Project: FC<ProjectProps> = ({
   desc,
   demoLink,
   sourceLink,
+  technologies = [],
 }) => {
   return (
-    <div className="w-full rounded-2xl flex my-5 h-82 flex-col md:flex-row justify-center">
+    <div className="w-full flex my-5 h-82 flex-col md:flex-row justify-center">
       <div className="md:w-1/2 w-full p-3 flex items-center">
         <Link href={demoLink}>
           <a target="_blank">
-            <img className="rounded-2xl h-auto w-full" src={img} alt="project" />
+            <img className="h-auto w-full" src={img} alt="project" />
           </a>
         </Link>
       </div>
@@ -29,6 +31,14 @@ const Project: FC<ProjectProps> = ({
       <div className="md:w-1/2 w-full flex flex-col justify-between px-5">
         <div>
           <h2 className="pt-4 pb-3 text-left text-2xl">{title}</h2>
+          <div className="flex flex-wrap">
+            {technologies.map((t) => (
+              <span className="bg-accent-3 text-white mr-1 p-1 rounded mb-2">
+                {t}
+              </span>
+            ))}
+          </div>
+
           <p className="text-left pb-5">{desc}</p>
         </div>
 
