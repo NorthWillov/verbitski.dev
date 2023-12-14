@@ -40,7 +40,7 @@ const Projects: FC = () => {
             />
 
             <Project
-              img="/assets/projects/mediavibes.jpeg"
+              img="/assets/projects/mediavibes.png"
               title="Media Agency - mediavibes"
               desc="Mediavibes is a versatile media agency that specializes in creating, managing, and optimizing advertising campaigns across various platforms. Their services encompass product and brand advertising, bolstering brand image, and reaching target audiences effectively."
               demoLink="https://dommediowymv.pl"
@@ -49,7 +49,7 @@ const Projects: FC = () => {
             />
 
             <Project
-              img="/assets/projects/riccardo.jpeg"
+              img="/assets/projects/riccardo.png"
               title="Pizzeria 'Riccardo' 🍕"
               desc="Pizzeria 'Riccardo' is a cutting-edge Full Stack Web Application designed to revolutionize the food delivery experience from 'Pizzeria & Restaurant - Riccardo' 👨🏻‍🍳. This digital platform seamlessly connects hungry customers with the delectable offerings of Riccardo's renowned culinary expertise, all from the comfort of their screens."
               demoLink="https://riccardo.onrender.com/"
@@ -66,7 +66,7 @@ const Projects: FC = () => {
             />
 
             <Project
-              img="/assets/projects/omb.jpeg"
+              img="/assets/projects/omb.png"
               title="National Business Meetings"
               desc="National Business Meetings are pivotal gatherings that convene professionals and stakeholders from various industries within a country to exchange insights, foster collaboration, and explore growth opportunities. These events serve as a platform for networking, knowledge sharing, and discussing emerging trends that influence the business landscape."
               demoLink="https://4dobrybiznes.pl"
