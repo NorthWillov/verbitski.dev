@@ -39,7 +39,7 @@ const Projects: FC = () => {
               img="/assets/projects/ricardo.jpg"
               title="Pizzeria 'Riccardo' 🍕"
               desc="Pizzeria 'Riccardo' is a cutting-edge Full Stack Web Application designed to revolutionize the food delivery experience from 'Pizzeria & Restaurant - Riccardo' 👨🏻‍🍳. This digital platform seamlessly connects hungry customers with the delectable offerings of Riccardo's renowned culinary expertise, all from the comfort of their screens."
-              demoLink="https://github.com/NorthWillov"
+              demoLink="https://riccardo.onrender.com/"
               sourceLink="https://github.com/NorthWillov/food_service"
             />
           </div>
