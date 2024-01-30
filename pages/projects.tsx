@@ -20,6 +20,15 @@ const Projects: FC = () => {
 
           <div className="flex flex-wrap sm:justify-between justify-center mt-20 pb-56">
             <Project
+              img="/assets/projects/zoe.png"
+              title="Church ZOE"
+              desc="The Christian Church ZOE is a community of people who profess their love for God and neighbors through practicing the Christian life."
+              demoLink="https://zoe-five.vercel.app/"
+              sourceLink="https://github.com/NorthWillov/zoe"
+              technologies={["React.js", "Next.js", "Vercel", "Stripe"]}
+            />
+
+            <Project
               img="/assets/projects/clubsapp.png"
               title="Clubs App"
               desc="Unlock the Potential of Communication with Clubs App. Connect with a community of different kind of people. Our platform connects you with a global community of of like-minded people. Create or find clubs of similar interests absolutely free of charge. All participants are verified and you can be sure that you are communicating with real people. Our platform helps increase foot traffic and boost sales for business
