@@ -11,6 +11,7 @@ import VideoBg from "../components/video-bg";
 import FirstIntro from "../components/first-intro";
 import LatestArticles from "../components/latest-articles";
 import LatestProject from "../components/latest-project";
+import ReactGA from "react-ga4";
 
 type Props = {
   latestPost: Post;
@@ -22,6 +23,7 @@ const Index = ({ latestPost, secondPost }: Props) => {
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
+    ReactGA.initialize("G-Z904L5PQ14");
   }, []);
 
   return (

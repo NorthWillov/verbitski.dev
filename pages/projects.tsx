@@ -20,6 +20,16 @@ const Projects: FC = () => {
 
           <div className="flex flex-wrap sm:justify-between justify-center mt-20 pb-56">
             <Project
+              img="/assets/projects/tbngo.png"
+              title="TBN GO"
+              desc="
+              TBN GO is your gateway to uninterrupted access to the renowned TBN Polska channel, delivering a diverse range of captivating programming right to your fingertips. Stay connected to the heart of Polish television with TBN Polska on TBN GO, your premier online destination for quality programming that uplifts, informs, and entertains."
+              demoLink="https://tbngo.pl/"
+              sourceLink="https://github.com/NorthWillov"
+              technologies={["React.js", "Video.js", "HLS.js"]}
+            />
+
+            <Project
               img="/assets/projects/zoe.png"
               title="Church ZOE"
               desc="The Christian Church ZOE is a community of people who profess their love for God and neighbors through practicing the Christian life."
