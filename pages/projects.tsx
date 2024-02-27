@@ -33,7 +33,7 @@ const Projects: FC = () => {
               img="/assets/projects/zoe.png"
               title="Church ZOE"
               desc="The Christian Church ZOE is a community of people who profess their love for God and neighbors through practicing the Christian life."
-              demoLink="https://zoe-five.vercel.app/"
+              demoLink="https://kosciolzoe.pl"
               sourceLink="https://github.com/NorthWillov/zoe"
               technologies={["React.js", "Next.js", "Vercel", "Stripe"]}
             />
