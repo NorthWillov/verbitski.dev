@@ -19,7 +19,7 @@ const ContactForm = () => {
     e.preventDefault();
     setIsLoading(true);
     emailjs
-      .send("service_c6nswei", "template_z8sjzbo", toSend, "zFJk94VehvF2ty6gT")
+      .send("service_t4r731i", "template_ia6j8sp", toSend, "mbyI7ZvGSZLs24uFu")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         setIsLoading(false);
@@ -110,7 +110,8 @@ const ContactForm = () => {
       </form>
       <div className="md:w-7/12 w-10/12 md:m-0 m-auto mt-8 md:mt-0 md:ml-5 text-xl">
         <p className="mb-5">
-          Feel free to contact me, my email is <b>artem@verbitski.dev</b> <br />
+          Feel free to contact me, my email is <b>artem.verbytskyi@proton.me</b>{" "}
+          <br />
           I’m most interested in job offers, freelance jobs, and security
           consultations.
         </p>
