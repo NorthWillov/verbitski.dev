@@ -23,7 +23,7 @@ const Index = ({ latestPost, secondPost }: Props) => {
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
-    ReactGA.initialize("GTM-MN4RTVJ6");
+    ReactGA.initialize("G-Z904L5PQ14");
   }, []);
 
   return (
