@@ -2,10 +2,8 @@ import Container from "../../components/container";
 import Posts from "../../components/posts";
 import Layout from "../../components/layout";
 import { getAllPosts } from "../../lib/api";
-import axios from "axios";
 import Head from "next/head";
 import Post from "../../types/post";
-import { all } from "remark-rehype";
 
 type Props = {
   allPosts: Post[];
@@ -29,10 +27,6 @@ const Index = ({ allPosts }: Props) => {
 export default Index;
 
 export const getStaticProps = async () => {
-  const res = await axios.get(
-    "https://dev.to/api/articles?username=northwillov"
-  );
-
   const getPosts = getAllPosts([
     "title",
     "date",
@@ -42,13 +36,21 @@ export const getStaticProps = async () => {
     "excerpt",
   ]);
 
-  const allPosts = getPosts.map((post, idx) => {
-    return {
-      ...post,
-      likes: res.data[idx].public_reactions_count,
-      comments: res.data[idx].comments_count,
-    };
-  });
+  let articles: { public_reactions_count: number; comments_count: number }[] = [];
+
+  try {
+    const res = await fetch("https://dev.to/api/articles?username=northwillov");
+    if (!res.ok) throw new Error(`dev.to API responded with ${res.status}`);
+    articles = await res.json();
+  } catch (err) {
+    console.error("Failed to fetch dev.to articles:", err);
+  }
+
+  const allPosts = getPosts.map((post, idx) => ({
+    ...post,
+    likes: articles[idx]?.public_reactions_count ?? 0,
+    comments: articles[idx]?.comments_count ?? 0,
+  }));
 
   return {
     props: { allPosts },

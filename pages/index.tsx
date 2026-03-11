@@ -6,7 +6,6 @@ import Head from "next/head";
 import ContactForm from "../components/contact-form";
 import { getAllPosts } from "../lib/api";
 import Post from "../types/post";
-import axios from "axios";
 import VideoBg from "../components/video-bg";
 import FirstIntro from "../components/first-intro";
 import LatestArticles from "../components/latest-articles";
@@ -59,10 +58,6 @@ const Index = ({ latestPost, secondPost }: Props) => {
 export default Index;
 
 export const getStaticProps = async () => {
-  const res = await axios.get(
-    "https://dev.to/api/articles?username=northwillov"
-  );
-
   const allPosts = getAllPosts([
     "title",
     "date",
@@ -71,16 +66,26 @@ export const getStaticProps = async () => {
     "excerpt",
   ]);
 
+  let articles: { public_reactions_count: number; comments_count: number }[] = [];
+
+  try {
+    const res = await fetch("https://dev.to/api/articles?username=northwillov");
+    if (!res.ok) throw new Error(`dev.to API responded with ${res.status}`);
+    articles = await res.json();
+  } catch (err) {
+    console.error("Failed to fetch dev.to articles:", err);
+  }
+
   return {
     props: {
       latestPost: {
-        likes: res.data[0].public_reactions_count,
-        comments: res.data[0].comments_count,
+        likes: articles[0]?.public_reactions_count ?? 0,
+        comments: articles[0]?.comments_count ?? 0,
         ...allPosts[0],
       },
       secondPost: {
-        likes: res.data[1].public_reactions_count,
-        comments: res.data[1].comments_count,
+        likes: articles[1]?.public_reactions_count ?? 0,
+        comments: articles[1]?.comments_count ?? 0,
         ...allPosts[1],
       },
     },
