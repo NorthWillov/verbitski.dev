@@ -19,7 +19,12 @@ const ContactForm = () => {
     e.preventDefault();
     setIsLoading(true);
     emailjs
-      .send("service_t4r731i", "template_ia6j8sp", toSend, "mbyI7ZvGSZLs24uFu")
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        toSend,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         setIsLoading(false);
