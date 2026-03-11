@@ -15,8 +15,6 @@ const ContactForm = () => {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  console.log(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY)
-
   const handleSubmit = (e: any) => {
     e.preventDefault();
     setIsLoading(true);
