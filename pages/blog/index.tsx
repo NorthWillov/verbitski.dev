@@ -42,6 +42,7 @@ export const getStaticProps = async () => {
     const res = await fetch("https://dev.to/api/articles?username=northwillov");
     if (!res.ok) throw new Error(`dev.to API responded with ${res.status}`);
     articles = await res.json();
+    console.log("Fetched dev.to articles:", articles);
   } catch (err) {
     console.error("Failed to fetch dev.to articles:", err);
   }

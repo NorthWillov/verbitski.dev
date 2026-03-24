@@ -16,7 +16,7 @@ export default async function markdownToHtml(markdown: string) {
     .use(rehypeRaw)
     .use(remarkGfm)
     .use(slug)
-    .use(rehypeHighlight)
+    .use(rehypeHighlight, { ignoreMissing: true })
     .use(rehypeDocument)
     .use(rehypeFormat)
     .use(rehypeStringify)
