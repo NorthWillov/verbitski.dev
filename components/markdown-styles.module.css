@@ -41,3 +41,20 @@
 .markdown code {
   @apply text-lg
 }
+
+.markdown table {
+  @apply w-full border-collapse my-6;
+}
+
+.markdown th,
+.markdown td {
+  @apply border border-gray-300 px-4 py-2 text-left;
+}
+
+.markdown th {
+  @apply bg-gray-100 font-semibold;
+}
+
+.markdown tr:nth-child(even) {
+  @apply bg-gray-50;
+}
